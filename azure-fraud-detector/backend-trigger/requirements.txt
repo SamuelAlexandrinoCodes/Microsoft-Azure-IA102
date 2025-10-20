@@ -1,0 +1,4 @@
+azure-functions
+azure-search-documents==11.4.0b8 # (Ou a versão que você já usa)
+# Não precisamos mais de azure-storage-blob aqui, 
+# pois o trigger nos dá o arquivo.

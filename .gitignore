@@ -1,0 +1,55 @@
+################################
+# 1. SEGURANÇA (Azure e Geral) #
+################################
+
+# Ignorar ficheiros de variáveis de ambiente (Sua regra - Ótimo!)
+.env
+*.env
+
+# Ignorar configurações locais do Azure Functions (ESSENCIAL!)
+# Este arquivo contém as mesmas chaves do .env e NUNCA deve ir para o GitHub.
+local.settings.json
+
+# Ignorar chaves de publicação e configurações de deploy do Azure
+*.PublishSettings
+*.publishsettings
+
+# Ignorar chaves SSH e GPG
+.ssh/
+*.key
+
+####################################
+# 2. DEPENDÊNCIAS E CACHE (Python) #
+####################################
+
+# Ignorar ficheiros de cache e dependências do Python (Sua regra - Perfeito!)
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Ignorar pastas de instalação do Pip e build
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Ignorar dependências do Jupyter
+.ipynb_checkpoints
+
+######################################
+# 3. CONFIGURAÇÕES DE IDE E SISTEMA  #
+######################################
+
+# Ignorar configurações do Visual Studio Code
+.vscode/
+
+# Ignorar configurações do PyCharm e outros IDEs
+.idea/
+
+# Ignorar arquivos de sistema do macOS
+.DS_Store
+
+# Ignorar arquivos de cache de thumbnail do Windows
+Thumbs.db
